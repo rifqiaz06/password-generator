@@ -74,7 +74,3 @@ Generated Password : 9A$hQm^pB1d!XcZ&kV2j
   ```
   Error : Anda harus memilih minimal satu jenis karakter (ulds).
   ```
-
-## 📜 License
-
-MIT License – bebas dipake dan dimodifikasi 👍
