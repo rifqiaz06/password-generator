@@ -23,7 +23,7 @@ A simple Python script to generate secure random passwords with customizable cha
 Clone this repository:
 
 ```bash
-git clone https://github.com/username/password-generator.git
+git clone https://github.com/rifqiaz06/password-generator.git
 cd password-generator
 ```
 
