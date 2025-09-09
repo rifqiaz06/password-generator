@@ -1,48 +1,54 @@
 # 🔐 Password Generator
 
-Script sederhana untuk generate password random yang aman dan bisa dikustomisasi berdasarkan jenis karakter. Dibuat dengan Python menggunakan **argparse**.
+A simple Python script to generate secure random passwords with customizable character types.
+
+---
 
 ## ⚡ Features
 
-- Pilih panjang password sesuai kebutuhan
-- Pilih jenis karakter yang digunakan:
+* Choose password length
+* Choose character types:
 
-  - `u` = Uppercase (A-Z)
-  - `l` = Lowercase (a-z)
-  - `d` = Digits (0-9)
-  - `s` = Symbols (punctuation)
+  * `u` = Uppercase (A-Z)
+  * `l` = Lowercase (a-z)
+  * `d` = Digits (0-9)
+  * `s` = Symbols (punctuation)
+* Ensures at least one character from each selected type
+* Automatically shuffles characters for randomness
 
-- Password selalu mengandung minimal satu karakter dari setiap jenis yang dipilih
-- Shuffle otomatis biar password lebih acak
+---
 
 ## 🛠️ Installation
 
-Clone repo ini:
+Clone this repository:
 
 ```bash
-git clone https://github.com/rifqiaz06/password-generator.git
+git clone https://github.com/username/password-generator.git
 cd password-generator
 ```
 
-Pastikan sudah install **Python 3.6+** di komputer lo.
+Make sure you have **Python 3.6+** installed.
+
+---
 
 ## 🚀 Usage
 
-Jalankan script dengan perintah:
+Run the script with:
 
 ```bash
 python password_generator.py --length 12 --chartype ulds
 ```
 
-### Args
+### Arguments
 
-- `--length` : Panjang password (minimal 4)
-- `--chartype` : Jenis karakter (kombinasi dari `u`, `l`, `d`, `s`)
+* `--length` : Password length (minimum 4)
+* `--chartype` : Character types (combination of `u`, `l`, `d`, `s`)
 
-### Example
+---
 
-**1. Length 16**
+### Examples
 
+1. Length 16
 ```bash
 python password_generator.py --length 16 --chartype ul
 ```
@@ -53,28 +59,28 @@ Output:
 Generated Password : aLDfTgYhWbQzXkMn
 ```
 
-**2. Length 20**
-
+2. Length 20
 ```bash
 python password_generator.py --length 20 --chartype ulds
 ```
 
 Output:
 
-```bash
+```
 Generated Password : 9A$hQm^pB1d!XcZ&kV2j
 ```
 
+---
+
 ## ⚠️ Error Handling
 
-- Kalau panjang password < 4:
+* If password length < 4:
 
   ```
-  Error : Panjang password minimal adalah 4.
+  Error : Password length must be at least 4.
   ```
-
-- Kalau `--chartype` kosong / tidak valid:
+* If `--chartype` is empty or invalid:
 
   ```
-  Error : Anda harus memilih minimal satu jenis karakter (ulds).
+  Error : You must choose at least one character type (ulds).
   ```
