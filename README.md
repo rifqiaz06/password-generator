@@ -41,6 +41,8 @@ python password_generator.py --length 12 --chartype ulds
 
 ### Example
 
+**1. Length 16**
+
 ```bash
 python password_generator.py --length 16 --chartype ul
 ```
@@ -51,13 +53,15 @@ Output:
 Generated Password : aLDfTgYhWbQzXkMn
 ```
 
+**2. Length 20**
+
 ```bash
 python password_generator.py --length 20 --chartype ulds
 ```
 
 Output:
 
-```
+```bash
 Generated Password : 9A$hQm^pB1d!XcZ&kV2j
 ```
 
